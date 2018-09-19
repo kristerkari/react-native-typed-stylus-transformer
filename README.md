@@ -27,6 +27,7 @@ Add this to `rn-cli.config.js` in your project's root (create the file if it doe
 
 ```js
 const { getDefaultConfig } = require("metro-config");
+
 module.exports = (async () => {
   const {
     resolver: { sourceExts }
