@@ -84,9 +84,6 @@ Your `App.styl` file might look like this:
 .myOtherClass {
   color: red;
 }
-.my-dashed-class {
-  color: green;
-}
 ```
 
 When you import your stylesheet:
@@ -104,17 +101,19 @@ var styles = {
   },
   myOtherClass: {
     color: "red"
-  },
-  "my-dashed-class" {
-    color: "green"
   }
 };
+```
+
+The `App.d.ts` file looks like this:
+
+```ts
+export const myClass: string;
+export const myOtherClass: string;
 ```
 
 You can then use that style object with an element:
 
 ```jsx
 <MyElement style={styles.myClass} />
-
-<MyElement style={styles["my-dashed-class"]} />
 ```
