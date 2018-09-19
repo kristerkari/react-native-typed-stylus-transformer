@@ -105,7 +105,7 @@ var styles = {
 };
 ```
 
-The `App.d.ts` file looks like this:
+The `App.styl.d.ts` file looks like this:
 
 ```ts
 export const myClass: string;
