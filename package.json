@@ -1,6 +1,6 @@
 {
   "name": "react-native-typed-stylus-transformer",
-  "version": "0.10.2",
+  "version": "0.11.0",
   "description": "Stylus transformer with Typescript support for React Native",
   "main": "index.js",
   "repository": "https://github.com/kristerkari/react-native-typed-stylus-transformer",
