@@ -52,7 +52,8 @@ If you are using [Expo](https://expo.io/), you also need to add this to `app.jso
 {
   "expo": {
     "packagerOpts": {
-      "config": "metro.config.js"
+      "config": "metro.config.js",
+      "sourceExts": ["ts", "tsx", "styl"]
     }
   }
 }
@@ -70,7 +71,7 @@ module.exports = {
     return require.resolve("react-native-typed-stylus-transformer");
   },
   getSourceExts() {
-    return ["js", "jsx", "styl"];
+    return ["ts", "tsx", "styl"];
   }
 };
 ```
@@ -85,7 +86,7 @@ If you are using [Expo](https://expo.io/), instead of adding the `rn-cli.config.
 {
   "expo": {
     "packagerOpts": {
-      "sourceExts": ["js", "jsx", "styl"],
+      "sourceExts": ["ts", "tsx", "styl"],
       "transformer": "node_modules/react-native-typed-stylus-transformer/index.js"
     }
   }
